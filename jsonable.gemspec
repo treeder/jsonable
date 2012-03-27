@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION.yml",
+    "jsonable.gemspec",
     "lib/jsonable.rb",
     "test/Gemfile",
     "test/my_class.rb",
