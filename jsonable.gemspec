@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "jsonable"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Travis Reeder"]
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "lib/jsonable.rb",
     "test/Gemfile",
     "test/my_class.rb",
+    "test/my_other_class.rb",
     "test/test_base.rb",
     "test/test_json_class.rb"
   ]
