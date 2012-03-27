@@ -1,9 +1,9 @@
 
 require_relative '../lib/jsonable'
 
-class MyClass
+class MyOtherClass
   include Jsonable
 
-  attr_accessor :x, :y, :h, :other_class
+  attr_accessor :a, :b
 
 end

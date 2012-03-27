@@ -10,7 +10,7 @@ module Jsonable
     def json_create(object)
       puts 'object=' + object.inspect
       obj = new
-      object.each_pair do |key, value|
+      object.each do |key, value|
         next if key == 'json_class'
         #puts "setting #{key}: #{value}"
         obj.instance_variable_set key, value
@@ -25,21 +25,20 @@ module Jsonable
 
   end
 
+  # sets the variables on the current object after json parsing the string.
   def from_json!(string)
     JSON.parse(string).each do |var, val|
       self.instance_variable_set var, val
     end
   end
 
-  def to_json(options={})
-    puts 'SimpleRecord as_json called with options: ' + options.inspect
+  def to_json(*a)
     result = {}
-    result['json_class'] = self.class.name unless options && options[:exclude_json_class]
-
+    result['json_class'] = self.class.name
     self.instance_variables.each do |var|
       result[var] = self.instance_variable_get var
     end
-    result.to_json
+    result.to_json(*a)
   end
 
 end
