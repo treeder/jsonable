@@ -1,5 +1,5 @@
-Makes your json classes serializable. Without this, you'll have to add your own
-to_json and json_create methods to your classes which is a big pain.
+A gem that makes it easy to serialize your objects to json and back. Without this, you'll have to add your own
+`to_json` and `json_create` methods to your classes which is a big pain. This makes it much less painful.
 
 Getting Started
 ==============
