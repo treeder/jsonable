@@ -1,4 +1,6 @@
 require 'json'
+require 'json/add/core' # enables serializing of Time and other things
+
 module Jsonable
 
   def self.included(base)
@@ -8,7 +10,6 @@ module Jsonable
   module ClassMethods
 
     def json_create(object)
-      puts 'object=' + object.inspect
       obj = new
       object.each do |key, value|
         next if key == 'json_class'
