@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "jsonable"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Travis Reeder"]
-  s.date = "2012-03-27"
+  s.date = "2012-03-29"
   s.description = "Makes your json classes serializable."
   s.email = "travis@iron.io"
   s.extra_rdoc_files = [
